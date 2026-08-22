@@ -4,6 +4,12 @@
 
 A small Windows tray app that nudges the mouse after idle time so the session stays active.
 
+![Русский интерфейс](screenshots/ru.jpg)
+
+![English UI](screenshots/en.jpg)
+
+![Трей](screenshots/panel.jpg)
+
 ## Скачать
 
 Windows 10/11, нужен [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) (обычно уже установлен).
