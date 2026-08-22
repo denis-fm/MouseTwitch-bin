@@ -4,19 +4,64 @@
 
 A small Windows tray app that nudges the mouse after idle time so the session stays active.
 
+Ключевые слова: эмулятор мыши, антисон, idle mouse, mouse jiggler, keep Windows awake.
+
 ![Русский интерфейс](screenshots/ru.jpg)
 
 ![English UI](screenshots/en.jpg)
 
 ![Трей](screenshots/panel.jpg)
 
+## Возможности
+
+- Период бездействия задаётся в секундах
+- Старт и стоп с формы и из трея
+- Крестик сворачивает в трей; выход — из меню по ПКМ
+- Автозапуск с Windows и автовключение отслеживания
+- Русский и английский интерфейс
+
+## Как пользоваться
+
+1. Скачайте `MouseTwitch.exe` и запустите (установка не нужна).
+2. Задайте период бездействия.
+3. Нажмите треугольник (play), чтобы включить отслеживание. Две черты (pause) — выключить.
+4. Закрытие окна прячет программу в трей. Полный выход: ПКМ по иконке → «Выход».
+
 ## Скачать
 
 Windows 10/11, нужен [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) (обычно уже установлен).
 
-Готовый файл: [Releases](https://github.com/denis-fm/MouseTwitch-bin/releases/latest) → `MouseTwitch.exe`. Установка не нужна.
+Файл: [Releases](https://github.com/denis-fm/MouseTwitch-bin/releases/latest) → `MouseTwitch.exe`.
 
 Исходный код в этом репозитории не публикуется.
+
+### SHA256 (v1.3.8)
+
+```
+7e24d034fbaa9756f4ab6d04eb2c876ef641b7d0ff1122a8793d85c5fc0c19ac
+```
+
+Проверка в PowerShell:
+
+```powershell
+Get-FileHash .\MouseTwitch.exe -Algorithm SHA256
+```
+
+## Если Windows блокирует запуск
+
+Файл не подписан сертификатом, SmartScreen может показать «Windows защитила ваш компьютер».
+
+**Подробнее** → **Выполнить в любом случае**.
+
+## Чего программа не делает
+
+- Не обходит пароль блокировки и политики домена
+- Не двигает мышь постоянно, только после заданного простоя
+- Курсор смещается на десятки пикселей и возвращается назад
+
+## Приватность
+
+Нет телеметрии и скрытых запросов в сеть. Настройки хранятся локально в `%AppData%\MouseJiggler`. В браузер программа выходит только если нажать «Поддержать».
 
 ## Поддержать
 
