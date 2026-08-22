@@ -39,10 +39,10 @@ Windows 10/11, нужен [.NET Framework 4.8](https://dotnet.microsoft.com/down
 
 Исходный код в этом репозитории не публикуется.
 
-### SHA256 (v1.3.8)
+### SHA256 (v1.3.9)
 
 ```
-7e24d034fbaa9756f4ab6d04eb2c876ef641b7d0ff1122a8793d85c5fc0c19ac
+71c72da9c3fe91bfa5ba9ad3483c31372aca592f70da463fe1eeb45c7aaf814f
 ```
 
 Проверка в PowerShell:
@@ -65,7 +65,7 @@ Get-FileHash .\MouseTwitch.exe -Algorithm SHA256
 
 ## Приватность
 
-Нет телеметрии и скрытых запросов в сеть. Настройки хранятся локально в `%AppData%\MouseJiggler`. В браузер программа выходит только если нажать «Поддержать».
+Нет телеметрии и скрытых запросов в сеть. Настройки хранятся локально в `%AppData%\MouseTwitch`. В браузер программа выходит только если нажать «Поддержать».
 
 ## Поддержать
 
@@ -98,10 +98,10 @@ Get the file from [Releases](https://github.com/denis-fm/MouseTwitch-bin/release
 
 Source code is not published in this repository.
 
-### SHA256 (v1.3.8)
+### SHA256 (v1.3.9)
 
 ```
-7e24d034fbaa9756f4ab6d04eb2c876ef641b7d0ff1122a8793d85c5fc0c19ac
+71c72da9c3fe91bfa5ba9ad3483c31372aca592f70da463fe1eeb45c7aaf814f
 ```
 
 Verify in PowerShell:
@@ -124,7 +124,7 @@ The executable is not code-signed. SmartScreen may show “Windows protected you
 
 ## Privacy
 
-No telemetry and no background network calls. Settings are stored locally in `%AppData%\MouseJiggler`. The app opens a browser only if you click Donate.
+No telemetry and no background network calls. Settings are stored locally in `%AppData%\MouseTwitch`. The app opens a browser only if you click Donate.
 
 ## Support
 
