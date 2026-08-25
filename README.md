@@ -23,6 +23,8 @@ Keywords: эмулятор мыши, антисон, idle mouse, mouse jiggler, 
 - Крестик сворачивает в трей; выход — из меню по ПКМ
 - Автозапуск с Windows и автовключение отслеживания
 - Русский и английский интерфейс
+- Опциональный клик в безопасной точке (выключен по умолчанию; для RDP и жёстких политик простоя)
+- Галочка «Не глушить свёрнутый RDP» на компьютере, с которого открываете Remote Desktop (не внутри терминала)
 
 ## Как пользоваться
 
@@ -39,10 +41,10 @@ Windows 10/11, нужен [.NET Framework 4.8](https://dotnet.microsoft.com/down
 
 Исходный код в этом репозитории не публикуется.
 
-### SHA256 (v1.3.9)
+### SHA256 (v1.4.1)
 
 ```
-71c72da9c3fe91bfa5ba9ad3483c31372aca592f70da463fe1eeb45c7aaf814f
+dd02e5ea54ca543a989c5ba1cc0d93b7f98fec65c48a1e784d42b7489ff2951a
 ```
 
 Проверка в PowerShell:
@@ -62,6 +64,7 @@ Get-FileHash .\MouseTwitch.exe -Algorithm SHA256
 - Не обходит пароль блокировки и политики домена
 - Не двигает мышь постоянно, только после заданного простоя
 - Курсор смещается на десятки пикселей и возвращается назад
+- Свёрнутое окно RDP глушит сеанс на сервере: галочку или .reg нужно включить на своём ПК, затем переподключиться
 
 ## Приватность
 
@@ -82,6 +85,8 @@ Get-FileHash .\MouseTwitch.exe -Algorithm SHA256
 - Closing the window hides it to the tray; quit from the tray context menu
 - Optional run at Windows startup and start tracking on launch
 - Russian and English UI
+- Optional click in a safe spot (off by default; for RDP and strict idle policies)
+- Option to keep a minimized RDP window from suppressing the remote session (set this on the PC you connect from)
 
 ## How to use
 
@@ -98,10 +103,10 @@ Get the file from [Releases](https://github.com/denis-fm/MouseTwitch-bin/release
 
 Source code is not published in this repository.
 
-### SHA256 (v1.3.9)
+### SHA256 (v1.4.1)
 
 ```
-71c72da9c3fe91bfa5ba9ad3483c31372aca592f70da463fe1eeb45c7aaf814f
+dd02e5ea54ca543a989c5ba1cc0d93b7f98fec65c48a1e784d42b7489ff2951a
 ```
 
 Verify in PowerShell:
@@ -121,6 +126,7 @@ The executable is not code-signed. SmartScreen may show “Windows protected you
 - It does not bypass the lock screen password or domain policies
 - It does not move the mouse continuously, only after the idle timeout
 - The cursor moves by tens of pixels and then returns
+- A minimized RDP window suppresses the remote desktop: enable the option or .reg on your local PC, then reconnect
 
 ## Privacy
 
