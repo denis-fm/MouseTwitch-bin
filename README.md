@@ -22,6 +22,7 @@ Keywords: эмулятор мыши, антисон, idle mouse, mouse jiggler, 
 - Старт и стоп с формы и из трея
 - Крестик сворачивает в трей; выход — из меню по ПКМ
 - Автозапуск с Windows и автовключение отслеживания
+- Галочка «Запускать свернутым»: окно сразу уходит в трей
 - Русский и английский интерфейс
 - Опциональный клик в безопасной точке (выключен по умолчанию; для RDP и жёстких политик простоя)
 - Галочка «Не глушить свёрнутый RDP» на компьютере, с которого открываете Remote Desktop (не внутри терминала)
@@ -41,10 +42,10 @@ Windows 10/11, нужен [.NET Framework 4.8](https://dotnet.microsoft.com/down
 
 Исходный код в этом репозитории не публикуется.
 
-### SHA256 (v1.4.1)
+### SHA256 (v1.4.2)
 
 ```
-dd02e5ea54ca543a989c5ba1cc0d93b7f98fec65c48a1e784d42b7489ff2951a
+b0c2bcc7f38b8f89fb848d7f4ec45889cf83d6e494ae18a4f42cb7a490d020f1
 ```
 
 Проверка в PowerShell:
@@ -84,6 +85,7 @@ Get-FileHash .\MouseTwitch.exe -Algorithm SHA256
 - Start and stop from the window or the tray icon
 - Closing the window hides it to the tray; quit from the tray context menu
 - Optional run at Windows startup and start tracking on launch
+- Option to start minimized to the tray
 - Russian and English UI
 - Optional click in a safe spot (off by default; for RDP and strict idle policies)
 - Option to keep a minimized RDP window from suppressing the remote session (set this on the PC you connect from)
@@ -103,10 +105,10 @@ Get the file from [Releases](https://github.com/denis-fm/MouseTwitch-bin/release
 
 Source code is not published in this repository.
 
-### SHA256 (v1.4.1)
+### SHA256 (v1.4.2)
 
 ```
-dd02e5ea54ca543a989c5ba1cc0d93b7f98fec65c48a1e784d42b7489ff2951a
+b0c2bcc7f38b8f89fb848d7f4ec45889cf83d6e494ae18a4f42cb7a490d020f1
 ```
 
 Verify in PowerShell:
